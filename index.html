@@ -4,450 +4,167 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Portfolio d'Adriano Buisine-Fanesi, étudiant en école de commerce spécialisé en stratégie, entrepreneuriat et développement."
-  >
+  <!-- Titre affiché dans l'onglet du navigateur -->
+  <title>Portfolio | Étudiant en école de commerce</title>
 
-  <title>Adriano Buisine-Fanesi | Portfolio</title>
-
+  <!-- Lien vers notre fichier CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-
+  <!-- En-tête de la page -->
   <header class="header">
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="#" class="logo">Mon Portfolio</a>
 
-      <a href="#" class="logo">
-        AB<span>.</span>
-      </a>
-
-      <div class="nav-links">
-        <a href="#about">À propos</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact" class="nav-button">
-          Contact
-        </a>
-      </div>
-
+      <a href="#contact" class="nav-contact">Me contacter</a>
     </nav>
   </header>
 
-
   <main>
 
-    <!-- ================= HERO ================= -->
+    <!-- Section de présentation -->
+    <section class="hero" aria-labelledby="presentation-title">
 
-    <section class="hero">
+      <div class="hero-text">
+        <p class="intro">Étudiant en école de commerce</p>
 
-      <div class="hero-content">
-
-        <div class="status">
-          <span class="status-dot"></span>
-          Disponible pour une opportunité
-        </div>
-
-        <p class="eyebrow">
-          ÉTUDIANT EN ÉCOLE DE COMMERCE
-        </p>
-
-        <h1>
-          Je transforme des idées
-          <span>en projets.</span>
+        <h1 id="presentation-title">
+          Bonjour, je suis <span>Adriano BUISINE-FANESI</span>
         </h1>
 
-        <p class="hero-description">
-          Bonjour, je suis <strong>Adriano Buisine-Fanesi</strong>.
-          Passionné par la stratégie, l'entrepreneuriat et le développement
-          des entreprises, je cherche à contribuer à des projets ambitieux
-          et à fort potentiel.
+        <p class="description">
+          Étudiant en école de commerce, je m'intéresse particulièrement
+          à la stratégie, à l'entrepreneuriat et au développement des entreprises.
+          Je recherche une opportunité qui me permettra de mettre mes compétences
+          au service de projets ambitieux.
         </p>
 
-        <div class="hero-buttons">
-
-          <a href="#projets" class="button button-primary">
-            Découvrir mes projets
-            <span>→</span>
-          </a>
-
-          <a href="#contact" class="button button-secondary">
-            Me contacter
-          </a>
-
-        </div>
-
-        <div class="hero-tags">
-
-          <span>Stratégie</span>
-          <span>Entrepreneuriat</span>
-          <span>Marketing</span>
-          <span>Finance</span>
-
-        </div>
-
+        <a href="#contact" class="button">
+          Me contacter
+        </a>
       </div>
 
-
-      <!-- PHOTO -->
-
-      <div class="hero-visual">
-
-        <div class="image-decoration"></div>
-
-        <div class="profile-card">
-
-          <img
-            src="maphoto.png"
-            alt="Portrait d'Adriano Buisine-Fanesi"
-          >
-
-          <div class="profile-info">
-            <strong>Adriano Buisine-Fanesi</strong>
-            <span>Business Student</span>
-          </div>
-
-        </div>
-
-        <div class="floating-card card-top">
-          <span>01</span>
-          <p>Business<br>Strategy</p>
-        </div>
-
-        <div class="floating-card card-bottom">
-          <span>02</span>
-          <p>Entrepreneurship</p>
-        </div>
-
+      <!-- Image de profil -->
+      <div class="hero-image">
+        <img
+          src="maphoto.png"
+        >
       </div>
 
     </section>
 
 
-    <!-- ================= À PROPOS ================= -->
+    <!-- Section compétences -->
+    <section class="section" aria-labelledby="competences-title">
 
-    <section id="about" class="section about">
+      <h2 id="competences-title">Mes compétences</h2>
 
-      <div class="section-heading">
+      <div class="cards">
 
-        <p class="eyebrow">
-          À PROPOS
-        </p>
-
-        <h2>
-          Un profil orienté
-          <span>business & innovation.</span>
-        </h2>
-
-      </div>
-
-      <div class="about-content">
-
-        <p>
-          Mon parcours en école de commerce m'a permis de développer
-          une vision globale de l'entreprise et de ses enjeux.
-          Je m'intéresse particulièrement à la manière dont les
-          entreprises peuvent construire des stratégies efficaces,
-          identifier de nouvelles opportunités et créer de la valeur.
-        </p>
-
-        <p>
-          Au-delà des connaissances académiques, j'aime travailler
-          sur des problématiques concrètes, analyser des marchés,
-          construire des projets et transformer une idée en plan
-          d'action.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= COMPÉTENCES ================= -->
-
-    <section id="competences" class="section">
-
-      <div class="section-heading">
-
-        <p class="eyebrow">
-          EXPERTISE
-        </p>
-
-        <h2>
-          Mes compétences
-        </h2>
-
-      </div>
-
-
-      <div class="skills-grid">
-
-        <article class="skill-card">
-
-          <div class="skill-number">
-            01
-          </div>
-
-          <h3>Analyse & stratégie</h3>
-
+        <article class="card">
+          <h3>Analyse</h3>
           <p>
-            Analyse de données, étude de marché, analyse concurrentielle
-            et transformation des informations en recommandations
-            stratégiques.
+            Analyse de données et capacité à transformer
+            des informations en recommandations concrètes.
           </p>
-
-          <div class="skill-tags">
-            <span>Analyse</span>
-            <span>Stratégie</span>
-          </div>
-
         </article>
 
-
-        <article class="skill-card">
-
-          <div class="skill-number">
-            02
-          </div>
-
+        <article class="card">
           <h3>Marketing</h3>
-
           <p>
-            Compréhension du positionnement, de la segmentation,
-            de l'expérience client et des problématiques de
-            développement commercial.
+            Compréhension des enjeux marketing, du positionnement
+            et de l'expérience client.
           </p>
-
-          <div class="skill-tags">
-            <span>Marketing</span>
-            <span>Branding</span>
-          </div>
-
         </article>
 
-
-        <article class="skill-card">
-
-          <div class="skill-number">
-            03
-          </div>
-
+        <article class="card">
           <h3>Gestion de projet</h3>
-
           <p>
-            Organisation, coordination des tâches, gestion des priorités
-            et suivi des objectifs dans un environnement collaboratif.
+            Organisation, coordination des tâches et suivi
+            des objectifs dans un environnement collaboratif.
           </p>
-
-          <div class="skill-tags">
-            <span>Organisation</span>
-            <span>Management</span>
-          </div>
-
         </article>
 
-
-        <article class="skill-card">
-
-          <div class="skill-number">
-            04
-          </div>
-
+        <article class="card">
           <h3>Communication</h3>
-
           <p>
-            Présentation d'idées, rédaction professionnelle et capacité
-            à communiquer clairement à l'écrit comme à l'oral.
+            Capacité à présenter clairement une idée et à
+            communiquer efficacement à l'écrit comme à l'oral.
           </p>
-
-          <div class="skill-tags">
-            <span>Présentation</span>
-            <span>Communication</span>
-          </div>
-
         </article>
 
       </div>
-
     </section>
 
 
-    <!-- ================= PROJETS ================= -->
+    <!-- Section projets -->
+    <section class="section projects" aria-labelledby="projets-title">
 
-    <section id="projets" class="section projects">
-
-      <div class="section-heading">
-
-        <p class="eyebrow">
-          PORTFOLIO
-        </p>
-
-        <h2>
-          Quelques projets
-        </h2>
-
-      </div>
-
+      <h2 id="projets-title">Mes projets</h2>
 
       <div class="projects-grid">
 
+        <article class="project">
+          <p class="project-number">01</p>
 
-        <article class="project-card">
+          <h3>Étude de marché</h3>
 
-          <div class="project-top">
-            <span class="project-number">
-              01
-            </span>
-
-            <span class="project-type">
-              Business
-            </span>
-          </div>
-
-          <div class="project-content">
-
-            <h3>
-              Étude de marché
-            </h3>
-
-            <p>
-              Analyse d'un marché, identification des principaux
-              concurrents et recherche d'opportunités de croissance.
-              Le projet avait pour objectif de construire des
-              recommandations stratégiques concrètes.
-            </p>
-
-            <div class="project-tags">
-              <span>Market Research</span>
-              <span>Strategy</span>
-              <span>Analysis</span>
-            </div>
-
-          </div>
-
-          <div class="project-footer">
-            <span>Projet académique</span>
-            <span>↗</span>
-          </div>
-
+          <p>
+            Réalisation d'une étude de marché dans le cadre
+            d'un projet académique : analyse des concurrents,
+            identification des opportunités et recommandations
+            stratégiques.
+          </p>
         </article>
 
+        <article class="project">
+          <p class="project-number">02</p>
 
-        <article class="project-card project-dark">
+          <h3>Projet entrepreneurial</h3>
 
-          <div class="project-top">
-            <span class="project-number">
-              02
-            </span>
-
-            <span class="project-type">
-              Startup
-            </span>
-          </div>
-
-          <div class="project-content">
-
-            <h3>
-              Projet entrepreneurial
-            </h3>
-
-            <p>
-              Développement d'une idée de startup depuis la définition
-              du problème jusqu'à la construction du business model,
-              l'identification de la clientèle cible et la présentation
-              devant un jury.
-            </p>
-
-            <div class="project-tags">
-              <span>Entrepreneurship</span>
-              <span>Business Model</span>
-              <span>Pitch</span>
-            </div>
-
-          </div>
-
-          <div class="project-footer">
-            <span>Projet académique</span>
-            <span>↗</span>
-          </div>
-
+          <p>
+            Conception d'une idée de startup avec définition
+            du business model, analyse de la clientèle cible
+            et présentation du projet devant un jury.
+          </p>
         </article>
-
 
       </div>
-
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- Section contact -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
 
-    <section id="contact" class="contact">
+      <h2 id="contact-title">Échangeons</h2>
 
-      <div class="contact-content">
+      <p>
+        Vous souhaitez discuter d'une opportunité, d'un projet
+        ou simplement en savoir plus sur mon parcours ?
+      </p>
 
-        <p class="eyebrow">
-          CONTACT
-        </p>
-
-        <h2>
-          Construisons quelque chose
-          <span>ensemble.</span>
-        </h2>
-
-        <p>
-          Vous souhaitez discuter d'une opportunité, d'un projet
-          ou simplement échanger sur mon parcours ?
-        </p>
-
-        <div class="contact-buttons">
-
-          <a
-            href="mailto:adriano.buisine@gmail.com"
-            class="button button-primary"
-          >
-            Me contacter
-            <span>→</span>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button button-secondary"
-          >
-            LinkedIn
-          </a>
-
-        </div>
-
-      </div>
+      <!-- Remplacez l'adresse par votre propre adresse email -->
+      <a
+        href="mailto:adriano.buisine@gmail.com"
+        class="button"
+      >
+        Me contacter par email
+      </a>
 
     </section>
 
   </main>
 
 
-  <!-- ================= FOOTER ================= -->
-
+  <!-- Pied de page -->
   <footer class="footer">
-
-    <div>
-      <strong>AB<span>.</span></strong>
-      <p>
-        Portfolio — Adriano Buisine-Fanesi
-      </p>
-    </div>
-
-    <p>
-      © 2026 — Tous droits réservés
-    </p>
-
+    <p>© 2026 Adriano BUISINE-FANESI — Portfolio</p>
   </footer>
 
 
+  <!-- Notre fichier JavaScript -->
   <script src="script.js"></script>
 
 </body>
